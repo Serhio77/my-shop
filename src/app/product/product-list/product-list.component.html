@@ -1,0 +1,10 @@
+<div>
+  <div><strong>Products:</strong></div>
+  <div>
+    <ul>
+      <li *ngFor="let product of products" [class.selected]="product === selectedProduct" (click)="onSelect(product)">            
+          <h3>{{product.Name | uppercase }}</h3>
+      </li>
+    </ul>
+  </div>
+</div>

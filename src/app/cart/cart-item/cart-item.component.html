@@ -1,0 +1,17 @@
+<div style="border-color: black; border:1px">
+  <strong>{{order.Name}}</strong>
+  <div>
+    Price : {{order.Price}} $
+  </div>
+  <div>
+    Amount : {{order.Count}}
+  </div>
+  <div>
+    Total : {{order.GetTotal()}} $
+  </div>    
+  <!-- <div>
+  <button [disabled]="currentProduct?.Count == 0">Add Product to Cart</button>
+  <input *ngIf="currentProduct?.Count > 0" value="1"/>
+  </div> -->
+  &nbsp;
+</div>
