@@ -1,0 +1,15 @@
+<strong>Product Details:</strong> 
+
+<div class="product-details">
+    {{currentProduct?.Name}} Price : {{currentProduct?.Price}} $
+  <div>
+    Description : {{currentProduct?.Description}}
+  </div>
+  <div>
+      Amount : {{currentProduct?.Count}}
+    </div>
+    <div>
+    <button [disabled]="currentProduct?.Count == 0">Add Product to Cart</button>
+    <input *ngIf="currentProduct?.Count > 0" value="1"/>
+  </div>
+</div>

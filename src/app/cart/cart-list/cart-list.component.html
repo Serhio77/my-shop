@@ -1,0 +1,8 @@
+<strong>Cart:</strong> 
+<div >            
+  <cart-item *ngFor="let ord of orders"
+    [order]="ord"></cart-item>  
+</div>
+<div>
+  Summary : {{GetSummary()}} $
+</div>
