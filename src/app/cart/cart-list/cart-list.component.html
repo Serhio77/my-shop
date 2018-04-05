@@ -1,6 +1,6 @@
 <strong>Cart:</strong> 
 <div >
-      <cart-item *ngFor="let ord of orders | sort: 'Price' : 'asc'"
+      <cart-item *ngFor="let ord of orders | sort: 'Price' : 'desc'"
         [order]="ord"></cart-item>  
 </div>
 <div>
