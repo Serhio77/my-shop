@@ -1,13 +1,13 @@
 <div style="border-color: black; border:1px">
   <strong>{{order.Name}}</strong>
   <div>
-    Price : {{order.Price}} $
+    Price : {{order.Price | currency : 'UAH':'symbol-narrow':'1.2-2':'uk'}}
   </div>
   <div>
-    Amount : {{order.Count}}
+    Amount : {{order.Count | unit}}
   </div>
   <div>
-    Total : {{order.GetTotal()}} $
+    Total : {{order.GetTotal() | currency : 'UAH':'symbol-narrow':'1.2-2':'uk'}}
   </div>    
   <!-- <div>
   <button [disabled]="currentProduct?.Count == 0">Add Product to Cart</button>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Order } from '../order.model';
+import { SortPipe } from '../../pipes/sort.pipe';
 
 @Component({
   selector: 'cart-list',
@@ -8,7 +9,7 @@ import { Order } from '../order.model';
 })
 export class CartListComponent implements OnInit {
 
-  orders : Array<Order> = [new Order('HUMMER', 10, 20),  new Order('NAILS', 10, 20),  new Order('PLANK', 10, 20)];
+  orders : Array<Order> = [new Order('HUMMER', 10, 20),  new Order('NAILS', 11, 20),  new Order('PLANK', 12, 20)];
 
   constructor() { 
   }

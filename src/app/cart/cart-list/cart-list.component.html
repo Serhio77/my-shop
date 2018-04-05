@@ -1,8 +1,8 @@
 <strong>Cart:</strong> 
-<div >            
-  <cart-item *ngFor="let ord of orders"
-    [order]="ord"></cart-item>  
+<div >
+      <cart-item *ngFor="let ord of orders | sort: 'Price' : 'asc'"
+        [order]="ord"></cart-item>  
 </div>
 <div>
-  Summary : {{GetSummary()}} $
+  Summary : {{GetSummary() | currency : 'UAH':'symbol-narrow':'1.2-2':'uk'}}
 </div>
